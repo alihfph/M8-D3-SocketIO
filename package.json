@@ -1,17 +1,31 @@
 {
-  "name": "my-socketio",
+  "name": "myapp",
   "version": "1.0.0",
   "description": "",
-  "main": "client.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "nodemon -r dotenv/config ./src/server.js",
+    "start": "node ./src"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alihfph/M8-D3-SocketIO.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alihfph/M8-D3-SocketIO/issues"
+  },
+  "homepage": "https://github.com/alihfph/M8-D3-SocketIO#readme",
   "dependencies": {
-    "mongoose": "^5.10.15",
-    "socket.io": "^2.3.0"
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.1.2",
+    "socket.io-client": "^4.1.2"
   }
 }
